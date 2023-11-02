@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <style>
+        /* Reset some default styles to ensure consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a background color for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style the h1 element for the page title */
+        h1 {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Style the form for input */
+        form {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        /* Style the label elements */
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Style the input elements */
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005bb9;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Sentiment Analysis</h1>
+    <form method="POST">
+        <label for="video_link">Enter YouTube Video Link:</label>
+        <input type="text" name="video_link" required>
+        <br>
+        <label for="comment_index">Select Comment Index:</label>
+        <input type="number" name="comment_index" required>
+        <br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <style>
+        /* Reset some default styles to ensure consistency */
+        html, body, h1, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color for the entire page */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Style the h1 element for the page title */
+        h1 {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        /* Style the paragraph elements for the comment and sentiment */
+        p {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the anchor (link) for "Back to Input" */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #005bb9;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Sentiment Analysis Result</h1>
+    <p>Selected Comment: {{ comment }}</p>
+    <p>Sentiment: {{ sentiment }}</p>
+    <a href="{{ url_for('index') }}">Back to Input</a>
+</body>
+</html>
